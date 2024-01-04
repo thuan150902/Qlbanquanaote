@@ -1,0 +1,49 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@model IEnumerable<LoaiSp>
+@using QLtreem.Models;
+<div class="product-filters">
+	<ul>
+		@{
+			var getUrl1 = "https://localhost:7012/api/ProductAPI/";
+			<li onclick="showProductsByCategory('@getUrl1')"><a style="cursor:pointer">Tất cả sản phẩm</a></li>
+		}
+		@foreach (var item in Model)
+		{
+			@*<li ><a href="#">@item.TenLoaiSp</a></li>*@
+			var getUrl = "https://localhost:7012/api/ProductAPI/" + item.MaLoaiSp;
+			<li onclick ="showProductsByCategory('@getUrl')"><a style="cursor:pointer">@item.TenLoaiSp</a></li>
+		}
+	</ul>
+	
+</div>
+<script>
+    function showProductsByCategory(getUrl) {
+        var str = '';
+        $.ajax({
+            type: 'GET',
+            url: getUrl,
+            dataType: 'json',
+            error: function (response) {
+                console.log(response);
+            },
+            success: function (data) {
+                $.each(data, function (key, val) {
+                    //str+='<p>'+val.tenSp+'</p>';
+                    str += `<div class="col-lg-4 col-md-6 text-center strawberry">
+							<div class="single-product-item">
+								<div class="product-image">
+									<a href=""><img src="../Products/Image/${val.hinhAnhAvatar}" alt=""></a>
+								</div>
+									<h3>${val.enSanPham}</h3>
+									<a asp-action="ChiTietSanPham" asp-controller="Home" asp-route-masp="${val.maSanPham}">Xem Chi Tiết</a>
+									<p class="product-price"><span>Giá bán: ${val.giaBan} Đồng</span> </p>
+								<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+							</div>
+						</div>`
+                });
+                $('#displayProducts').html(str)
+            }
+        });
+    }
+</script>

@@ -1,0 +1,129 @@
+﻿@model QLtreem.Models.SanPham
+@{
+    ViewData["Title"] = "ChiTietSanPham";
+	Layout = "~/Views/Shared/_LayoutTreem.cshtml";
+}
+
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Single Product</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="../assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="../assets/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="../assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="../assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="../assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+<br/>
+<h2 style="text-align:center" >Chi tiết sản phẩm</h2>
+<body>
+
+	
+	<!-- single product -->
+	<div class="single-product mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="single-product-img">
+						<img src="@Url.Content("../Products/Image/"+Model.HinhAnhAvatar)" alt="">
+					</div>
+					@*<div>
+						 @foreach (var image in ViewBag.anhSanPham)
+                            {
+								<img src="@Url.Content("../Products/Image/"+image.TenFileAnh)" />
+							}
+					</div>*@
+	
+				</div>
+				<div class="col-md-7">
+					<div class="single-product-content">
+						<h3>@Model.TenSanPham</h3>
+						<p class="single-product-pricing"><span style="color:#051922">Giá bán: @Model.GiaBan Đồng</span></p>
+						<p></p>
+
+						<div>
+							<span>Size:</span>
+							 @if (ViewData["SizeSP"] != null)
+                                    {
+                                        @foreach (var size in (List<String>)ViewData["SizeSP"])
+                                        {
+                                        <label for="@size">
+                                            @size
+                                            <input type="radio" id="@size">
+                                            </label>
+                                        }
+                                    
+                                    }
+
+							<span> <br/> Màu:</span>
+							@if (ViewData["MauSP"] != null)
+							{
+								@foreach (var mau in (List<String>)ViewData["MauSP"])
+								{
+												<label for="@mau">
+										@mau
+													<input type="radio" id="@mau">
+													</label>
+								}
+
+							}
+							
+							<span><br />Chất liệu: @Model.ChatLieu</span>
+							<div class="wrap-num-product flex-w m-r-20 m-tb-10">
+								@*<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+									<i class="fs-16 zmdi zmdi-minus"></i>
+								</div>*@
+
+									<input class="mtext-104 cl3 txt-center num-product" type="number" min="0" name="num-product" value="1">
+
+								@*<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+									<i class="fs-16 zmdi zmdi-plus"></i>
+								</div>*@
+							</div>
+						</div>
+						<div class="single-product-form">
+							@*<form action="index.html">
+								<input type="number" placeholder="0">
+							</form>*@
+							<a asp-action="AddToCart" asp-controller="Cart" asp-route-maSanPham="@Model.MaSanPham" class="cart-btn"><i class="fas fa-shopping-cart"></i> Thêm giỏ hàng</a>
+							@*<p><strong>Categories: </strong>Fruits, Organic</p>*@
+						</div>
+						<h4>Share:</h4>
+						<ul class="product-share">
+							<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+							<li><a href=""><i class="fab fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end single product -->
+</body>
+</html>

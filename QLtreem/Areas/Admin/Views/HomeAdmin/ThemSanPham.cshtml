@@ -1,0 +1,95 @@
+﻿@model QLtreem.Models.SanPham
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "ThemSanPham";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="text-align:center">Thêm sản phẩm</h1>
+<hr />
+
+    <a asp-action="DanhMucSanPham" class="btn btn-info">Danh Mục Sản Phẩm</a>
+    
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="ThemSanPham" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MaSanPham" class="control-label"></label>
+                <input asp-for="MaSanPham" class="form-control" />
+                <span asp-validation-for="MaSanPham" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenSanPham" class="control-label"></label>
+                <input asp-for="TenSanPham" class="form-control" />
+                <span asp-validation-for="TenSanPham" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChatLieu" class="control-label"></label>
+                <input asp-for="ChatLieu" class="form-control" />
+                <span asp-validation-for="ChatLieu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GiaNhap" class="control-label"></label>
+                <input asp-for="GiaNhap" class="form-control" />
+                <span asp-validation-for="GiaNhap" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GiaBan" class="control-label"></label>
+                <input asp-for="GiaBan" class="form-control" />
+                <span asp-validation-for="GiaBan" class="text-danger"></span>
+            </div>
+
+
+            
+            @*<div class="form-group">
+                <label asp-for="HinhAnhAvatar" class="control-label"></label>
+                <input asp-for="HinhAnhAvatar" class="form-control" />
+                <span asp-validation-for="HinhAnhAvatar" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="MaLoaiSp" class="control-label"></label>
+                <select asp-for="MaLoaiSp" class ="form-control" asp-items="ViewBag.MaLoaiSp"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaDoiTuongMh" class="control-label"></label>
+                <select asp-for="MaDoiTuongMh" class ="form-control" asp-items="ViewBag.MaDoiTuongMh"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.FileUpload" class="control-label"></label>
+                <br />
+                <img id="FrontImagePrv" src="HinhAnhAvatar" width="150" height="150"
+                     style="border:1px; display:flex;margin:auto;" />
+                <div class="custom-file" style="text-align:center;">
+                    <input style="display:none" asp-for="@Model.FileUpload" class="custom-file-input " id="FLFrontImage"
+                           onchange="document.getElementById('FrontImagePrv').src=window.URL.createObjectURL(this.files[0])" />
+                    <label class="custom-file-label label" for="FLFrontImage">Chọn ảnh</label>
+                </div>
+                <span asp-validation-for="@Model.FileUpload" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Thêm" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script type="text/javascript">
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+}
+
+

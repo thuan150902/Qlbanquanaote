@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "Shop";
+    Layout = "~/Views/Shared/_LayoutTreem.cshtml";
+}
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@model X.PagedList.IPagedList<SanPham>
+<br />
+<form asp-action="Shop" style="text-align:right;padding-right:50px">
+	<input style="border-radius:10px" type="text" placeholder="Keywords" name="Search">
+	<button style="border-radius:10px" type="submit">Search <i class="fas fa-search"></i></button>
+</form>
+<div class="product-section mt-150 mb-150">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-12">
+				@await Component.InvokeAsync("LoaiSPMenu")
+			</div>
+		</div>
+
+		<div id="displayProducts" class="row " style="position: relative; height: auto !important;">
+			@foreach(var item in Model)
+			{
+					@await Html.PartialAsync("_PartialSP", item)			
+			}
+			<div class="col-lg-12" style="display:flex; justify-content:center; width:100%;">
+				<div class="pagination-wrap">
+
+					<div class="pagination" >
+							@Html.PagedListPager(Model,page => Url.Action(("Shop"),new{page = page}),
+							new PagedListRenderOptions {
+							LiElementClasses = new string[] { "page-item" },
+							PageClasses = new string[] { "page-link" }
+							})
+						</div>
+				
+				</div>
+			</div>
+		</div>
+
+			
+		
+	</div>
+</div>

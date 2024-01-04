@@ -1,0 +1,122 @@
+﻿@model List<QLtreem.Models.Cart>
+@{
+    ViewData["Title"] = "Cart";
+    Layout = "~/Views/Shared/_LayoutTreem.cshtml";
+}
+<!-- cart -->
+@{
+	decimal total = 0, intoMoney = 0;
+	int stt = 1;
+	<h3 style="text-align:center">Giỏ hàng</h3>
+<form class="cart-section mt-150 mb-150">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-12">
+				<div class="cart-table-wrap">
+					<table class="cart-table">
+						<thead class="cart-table-head">
+							<tr class="table-head-row">
+								<th class="column-1">STT</th>
+								<th class="product-image">Ảnh sản phẩm</th>
+								<th class="product-name">Tên sản phẩm</th>
+								<th class="product-price">Giá</th>
+								<th class="product-quantity">Số lượng</th>
+								<th class="product-total">Thành tiền</th>
+								<th style="text-align: center;" class="">Cập nhập</th>
+								<th class="">Xóa</th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach (var cartitem in Model)
+							{
+								var thanhtien = cartitem.qty * cartitem.SanPham.GiaBan;
+								total += (decimal)thanhtien;
+								<tr class="table-body-row">
+									<td class="column-1">@(stt++)</td>
+								
+									<td class="column-2">
+											<div class="how-itemcart1" >
+												<img src="../Products/Image/@cartitem.SanPham.HinhAnhAvatar" width="70" height="100" alt="IMG">
+											</div>
+									</td>
+									<td class="columns-2"><p>@cartitem.SanPham.TenSanPham</p></td>
+									<td class="columns-1">@(cartitem.SanPham.GiaBan.Value.ToString("n0"))</td>
+										<td class="product-quantity">
+											<input placeholder="1" type="number" name="num-product1" min="0"
+										   asp-for="@cartitem.qty" id="@($"quantity-{cartitem.SanPham.MaSanPham}")">
+										</td>
+									<td class="columns-2">@(thanhtien.Value.ToString("n0"))</td>
+									<td class="columns-4">
+										<button class="btn btn-success updatecartitem"
+												data-maSanPham="@cartitem.SanPham.MaSanPham">
+												Cập nhật
+										</button>
+									</td>
+									<td class="columns-3">
+										<a onclick="return window.confirm('bạn có muốn xóa không?')" asp-action="removecart" asp-controller="Cart" asp-route-maSanPham="@cartitem.SanPham.MaSanPham" class="pointer btn btn-danger ">
+											Xóa
+										</a>
+									</td>
+								</tr>
+
+							}
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="total-section">
+					<table class="total-table">
+						<thead class="total-table-head">
+							<tr class="table-total-row">
+								<th>Total</th>
+								<th>Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="total-data">
+								<td><strong>Tổng tiền: </strong></td>
+									<td>@(total.ToString("n0"))</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="cart-buttons">
+					
+						<a href="checkout.html" class="boxed-btn black">Đặt hàng</a>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+</form>
+}
+@section Scripts {
+	<script>
+		$(document).ready(function () {
+			$(".updatecartitem").click(function (event) {
+				event.preventDefault();
+				var maSanPham = $(this).attr("data-maSanPham");
+				var quantity = $("#quantity-" + maSanPham).val();
+				$.ajax({
+					type: "POST",
+					url: "@Url.RouteUrl("updatecart")",
+					data: {
+						maSanPham: maSanPham,
+						quantity: quantity
+					},
+					success: function (result) {
+						window.location.href = "@Url.RouteUrl("cart")";
+					}
+				});
+			});
+		});
+	</script>
+      }
+}
+
+
+<!-- end cart -->

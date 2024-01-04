@@ -1,0 +1,1205 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap-grid.css" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap-grid.css.map" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap-grid.min.css" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap-reboot.css" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap.css" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap.css.map" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap.min.css" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\css\bootstrap.min.css.map" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\js\bootstrap.bundle.js" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\js\bootstrap.js" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\js\bootstrap.js.map" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\js\bootstrap.min.js" />
+    <None Remove="wwwroot - Copy\assets\bootstrap\js\bootstrap.min.js.map" />
+    <None Remove="wwwroot - Copy\assets\css\all.min.css" />
+    <None Remove="wwwroot - Copy\assets\css\animate.css" />
+    <None Remove="wwwroot - Copy\assets\css\login.css" />
+    <None Remove="wwwroot - Copy\assets\css\magnific-popup.css" />
+    <None Remove="wwwroot - Copy\assets\css\main.css" />
+    <None Remove="wwwroot - Copy\assets\css\meanmenu.min.css" />
+    <None Remove="wwwroot - Copy\assets\css\owl.carousel.css" />
+    <None Remove="wwwroot - Copy\assets\css\responsive.css" />
+    <None Remove="wwwroot - Copy\assets\css\scss\base\_mixins.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\base\_typography.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\base\_variables.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\common\_common.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\common\_footer.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\common\_header.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\common\_hover.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\main.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\pages\_404.css" />
+    <None Remove="wwwroot - Copy\assets\css\scss\pages\_404.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\pages\_about.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\pages\_contact.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\pages\_shop.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\sections\_about.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\sections\_cart-banner.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\sections\_hero.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\sections\_list.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\sections\_news.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\sections\_shop-banner.scss" />
+    <None Remove="wwwroot - Copy\assets\css\scss\sections\_testimonials.scss" />
+    <None Remove="wwwroot - Copy\assets\img\1.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\a.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\abt.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\avaters\avatar1.png" />
+    <None Remove="wwwroot - Copy\assets\img\avaters\avatar2.png" />
+    <None Remove="wwwroot - Copy\assets\img\avaters\avatar3.png" />
+    <None Remove="wwwroot - Copy\assets\img\breadcrumb-bg.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\company-logos\1.png" />
+    <None Remove="wwwroot - Copy\assets\img\company-logos\2.png" />
+    <None Remove="wwwroot - Copy\assets\img\company-logos\3.png" />
+    <None Remove="wwwroot - Copy\assets\img\company-logos\4.png" />
+    <None Remove="wwwroot - Copy\assets\img\company-logos\5.png" />
+    <None Remove="wwwroot - Copy\assets\img\dd.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\favicon.png" />
+    <None Remove="wwwroot - Copy\assets\img\feature-bg.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\hero-bg-2.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\hero-bg-3.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\hero-bg.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\homepage-bg-pattern.png" />
+    <None Remove="wwwroot - Copy\assets\img\latest-news\news-bg-1.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\latest-news\news-bg-2.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\latest-news\news-bg-3.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\latest-news\news-bg-4.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\latest-news\news-bg-5.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\latest-news\news-bg-6.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\logo.png" />
+    <None Remove="wwwroot - Copy\assets\img\products\product-img-1.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\products\product-img-2.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\products\product-img-3.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\products\product-img-4.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\products\product-img-5.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\products\product-img-6.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\team\team-1.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\team\team-2.jpg" />
+    <None Remove="wwwroot - Copy\assets\img\team\team-3.jpg" />
+    <None Remove="wwwroot - Copy\assets\js\form-validate.js" />
+    <None Remove="wwwroot - Copy\assets\js\jquery-1.11.3.min.js" />
+    <None Remove="wwwroot - Copy\assets\js\jquery.countdown.js" />
+    <None Remove="wwwroot - Copy\assets\js\jquery.isotope-3.0.6.min.js" />
+    <None Remove="wwwroot - Copy\assets\js\jquery.magnific-popup.min.js" />
+    <None Remove="wwwroot - Copy\assets\js\jquery.meanmenu.min.js" />
+    <None Remove="wwwroot - Copy\assets\js\login.js" />
+    <None Remove="wwwroot - Copy\assets\js\main.js" />
+    <None Remove="wwwroot - Copy\assets\js\owl.carousel.min.js" />
+    <None Remove="wwwroot - Copy\assets\js\sticker.js" />
+    <None Remove="wwwroot - Copy\assets\js\waypoints.js" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-brands-400.eot" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-brands-400.eot_" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-brands-400.svg" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-brands-400.ttf" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-brands-400.woff" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-brands-400.woff2" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-regular-400.eot" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-regular-400.eot_" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-regular-400.svg" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-regular-400.ttf" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-regular-400.woff" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-regular-400.woff2" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-solid-900.eot" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-solid-900.eot_" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-solid-900.svg" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-solid-900.ttf" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-solid-900.woff" />
+    <None Remove="wwwroot - Copy\assets\webfonts\fa-solid-900.woff2" />
+    <None Remove="wwwroot - Copy\css\site.css" />
+    <None Remove="wwwroot - Copy\favicon.ico" />
+    <None Remove="wwwroot - Copy\js\site.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.esm.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\LICENSE" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation\dist\additional-methods.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation\LICENSE.md" />
+    <None Remove="wwwroot - Copy\lib\jquery\dist\jquery.js" />
+    <None Remove="wwwroot - Copy\lib\jquery\dist\jquery.min.js" />
+    <None Remove="wwwroot - Copy\lib\jquery\dist\jquery.min.map" />
+    <None Remove="wwwroot - Copy\lib\jquery\LICENSE.txt" />
+    <None Remove="wwwroot - Copy\Products\Image\AnhDaiDienSP1.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\AnhDaiDienSP10.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\AnhDaiDienSP2.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\AnhDaiDienSP3.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\AnhDaiDienSP4.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\AnhDaiDienSP5.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\AnhDaiDienSP6.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\AnhDaiDienSP7.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\AnhDaiDienSP8.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\AnhDaiDienSP9.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Bodylien01.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Bodylien02.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Bodylien03.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Bodylien04.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Catrio01.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Catrio02.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\catrio03.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\catrio04.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Dam01.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Dam02.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Dam03.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Dam04.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Doremon01.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Doremon02.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Doremon03.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Doremon04.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Goking01.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Goking02.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Goking03.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Goking04.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Jeanbo01.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Jeanbo02.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Jeanbo03.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Jeanbo04.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\jeanmen01.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Jeanmen02.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Jeanmen04.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Qate01.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Qate02.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Qate03.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Qate04.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Rototo01.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Rototo02.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Rototo03.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Rototo04.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Sora01.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Sora02.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Sora03.jpg" />
+    <None Remove="wwwroot - Copy\Products\Image\Sora04.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap-grid.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap-grid.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap-grid.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap-grid.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap-reboot.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap-reboot.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap-reboot.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap-reboot.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\css\bootstrap.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\js\bootstrap.bundle.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\js\bootstrap.bundle.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\js\bootstrap.bundle.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\js\bootstrap.bundle.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\js\bootstrap.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\js\bootstrap.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\js\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\bootstrap\js\bootstrap.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\all.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\animate.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\login.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\magnific-popup.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\main.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\meanmenu.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\owl.carousel.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\responsive.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\base\_mixins.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\base\_typography.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\base\_variables.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\common\_common.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\common\_footer.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\common\_header.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\common\_hover.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\main.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\pages\_404.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\pages\_404.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\pages\_about.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\pages\_contact.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\pages\_shop.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\sections\_about.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\sections\_cart-banner.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\sections\_hero.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\sections\_list.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\sections\_news.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\sections\_shop-banner.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\css\scss\sections\_testimonials.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\a.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\abt.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\avaters\avatar1.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\avaters\avatar2.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\avaters\avatar3.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\breadcrumb-bg.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\company-logos\1.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\company-logos\2.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\company-logos\3.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\company-logos\4.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\company-logos\5.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\dd.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\favicon.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\feature-bg.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\hero-bg-2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\hero-bg-3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\hero-bg.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\homepage-bg-pattern.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\latest-news\news-bg-1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\latest-news\news-bg-2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\latest-news\news-bg-3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\latest-news\news-bg-4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\latest-news\news-bg-5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\latest-news\news-bg-6.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\logo.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\products\product-img-1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\products\product-img-2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\products\product-img-3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\products\product-img-4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\products\product-img-5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\products\product-img-6.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\team\team-1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\team\team-2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\img\team\team-3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\form-validate.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\jquery-1.11.3.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\jquery.countdown.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\jquery.isotope-3.0.6.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\jquery.magnific-popup.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\jquery.meanmenu.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\login.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\main.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\owl.carousel.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\sticker.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\js\waypoints.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-brands-400.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-brands-400.eot_">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-brands-400.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-brands-400.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-brands-400.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-brands-400.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-regular-400.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-regular-400.eot_">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-regular-400.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-regular-400.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-regular-400.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-regular-400.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-solid-900.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-solid-900.eot_">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-solid-900.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-solid-900.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-solid-900.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\assets\webfonts\fa-solid-900.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\site.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\site.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.rtl.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.rtl.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.rtl.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.rtl.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.esm.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.esm.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.esm.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.esm.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\LICENSE">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation-unobtrusive\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation\dist\additional-methods.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation\dist\additional-methods.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation\dist\jquery.validate.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation\dist\jquery.validate.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation\LICENSE.md">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery\dist\jquery.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery\dist\jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery\dist\jquery.min.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\AnhDaiDienSP1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\AnhDaiDienSP10.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\AnhDaiDienSP2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\AnhDaiDienSP3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\AnhDaiDienSP4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\AnhDaiDienSP5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\AnhDaiDienSP6.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\AnhDaiDienSP7.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\AnhDaiDienSP8.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\AnhDaiDienSP9.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Bodylien01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Bodylien02.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Bodylien03.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Bodylien04.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Catrio01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Catrio02.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\catrio03.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\catrio04.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Dam01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Dam02.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Dam03.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Dam04.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Doremon01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Doremon02.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Doremon03.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Doremon04.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Goking01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Goking02.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Goking03.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Goking04.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Jeanbo01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Jeanbo02.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Jeanbo03.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Jeanbo04.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\jeanmen01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Jeanmen02.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Jeanmen04.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Qate01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Qate02.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Qate03.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Qate04.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Rototo01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Rototo02.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Rototo03.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Rototo04.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Sora01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Sora02.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Sora03.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\Products\Image\Sora04.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\LayoutAdmin\assets\css\style.css.map" />
+    <None Include="wwwroot\LayoutAdmin\assets\fonts\Ubuntu\Ubuntu-Bold.woff2" />
+    <None Include="wwwroot\LayoutAdmin\assets\fonts\Ubuntu\Ubuntu-Light.woff2" />
+    <None Include="wwwroot\LayoutAdmin\assets\fonts\Ubuntu\Ubuntu-Medium.woff2" />
+    <None Include="wwwroot\LayoutAdmin\assets\fonts\Ubuntu\Ubuntu-Regular.woff2" />
+    <None Include="wwwroot\LayoutAdmin\assets\images\dashboard\circle.svg" />
+    <None Include="wwwroot\LayoutAdmin\assets\images\logo-mini.svg" />
+    <None Include="wwwroot\LayoutAdmin\assets\images\logo.svg" />
+    <None Include="wwwroot\LayoutAdmin\assets\js\chart.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\js\dashboard.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\js\file-upload.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\js\hoverable-collapse.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\js\jquery.cookie.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\js\misc.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\js\off-canvas.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\js\todo.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\js\todolist.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_badges.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_bootstrap-progress.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_breadcrumbs.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_buttons.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_cards.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_checkbox-radio.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_dropdown.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_forms.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_icons.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_lists.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_preview.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_tables.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\components\_todo-list.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\landing-screens\_auth.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_animation.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_background.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_badges.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_blockqoute.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_breadcrumbs.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_buttons.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_cards.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_misc.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_pagination.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_popovers.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_text.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\mixins\_tooltips.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\style.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_dashboard.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_demo.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_fonts.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_footer.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_functions.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_layouts.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_misc.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_navbar.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_reset.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_sidebar.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_typography.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_utilities.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_variables.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_vertical-wrapper.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\scss\_widget-grid.scss" />
+    <None Include="wwwroot\LayoutAdmin\assets\vendors\chart.js\Chart.min.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\vendors\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\LayoutAdmin\assets\vendors\js\vendor.bundle.base.js" />
+    <None Include="wwwroot\LayoutAdmin\assets\vendors\mdi\css\materialdesignicons.min.css.map" />
+    <None Include="wwwroot\LayoutAdmin\assets\vendors\mdi\fonts\materialdesignicons-webfont.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+    <PackageReference Include="X.PagedList" Version="8.4.7" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+
+</Project>

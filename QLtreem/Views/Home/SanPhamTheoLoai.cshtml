@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "SanPhamTheoLoai";
+	Layout = "~/Views/Shared/_LayoutTreem.cshtml";
+}
+
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@model X.PagedList.IPagedList<SanPham>
+
+
+<div class="product-section mt-150 mb-150">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				@await Component.InvokeAsync("LoaiSPMenu")
+			</div>
+		</div>
+
+		<div class="row product-lists" style="position: relative; height: 1147.4px;">
+			@foreach (var item in Model)
+			{
+				<div class="col-lg-4 col-md-6 text-center strawberry" style="position: absolute; left: 0px; top: 0px;">
+					@await Html.PartialAsync("_PartialSP", item)
+				</div>
+			}
+
+			
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="pagination-wrap">
+					<div class="pagination">
+						@Html.PagedListPager(Model,page => Url.Action(("Index"),new{page = page}),
+						new PagedListRenderOptions {
+						LiElementClasses = new string[] { "page-item" },
+						PageClasses = new string[] { "page-link" }
+						});
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

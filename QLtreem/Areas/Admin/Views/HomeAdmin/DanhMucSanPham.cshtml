@@ -1,0 +1,87 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@using QLtreem.Models;
+@model X.PagedList.IPagedList<SanPham>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "DanhMucSanPham";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="text-align:center">Danh Mục Các Sản Phẩm</h1>
+
+
+<div class="col-12">
+  
+        <p>
+            <a class="btn btn-info mr-3" asp-action="ThemSanPham">Thêm Sản Phẩm</a>
+        </p>
+
+</div>
+<p>@TempData["Message"]</p>
+<table class="table table-striped">
+    <thead>
+        <tr class="table-info">
+            <th>
+               Tên sản phẩm
+            </th>
+            <th>
+               Chất liệu
+            </th>
+            <th>
+               Giá nhập
+            </th>
+            <th>
+                Giá bán
+            </th>
+            <th>
+               Hình ảnh
+            </th>
+          
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenSanPham)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChatLieu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaNhap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaBan)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.HinhAnhAvatar)
+            </td>
+            
+           
+            <td>
+                 @*<button style="background:blue" class="btn btn-info mr-5"> <a asp-action="SuaSanPham" asp-route-maSanPham="@item.MaSanPham" style="color:azure;text-decoration:none">Sửa</a></button>*@
+                    
+                 <a asp-action="SuaSanPham" asp-route-maSanPham="@item.MaSanPham" style="color:azure;text-decoration:none ; padding:10px 16px; background-color:blue;border-radius:5px">Sửa</a>
+                    <a onclick="return window.confirm('bạn có muốn xóa không?')" asp-action="XoaSanPham" asp-route-maSanPham="@item.MaSanPham" style="color:azure;text-decoration:none ;padding:10px 16px; background-color:red;border-radius:5px">Xóa</a>
+                 @* <button style="background:red" class="btn btn-info mr-5"> <a  onclick="return window.confirm('bạn có muốn xóa không?')" asp-action="XoaSanPham" asp-route-maSanPham="@item.MaSanPham" style="color:azure;text-decoration:none">Xóa</a></button>*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div class="col-lg-12" style="display:flex; justify-content:center; width:100%;">
+    <div class="pagination-wrap">
+
+        <div class="pagination">
+            @Html.PagedListPager(Model,page => Url.Action(("DanhMucSanPham"),new{page = page}),
+            new PagedListRenderOptions {
+            LiElementClasses = new string[] { "page-item" },
+            PageClasses = new string[] { "page-link" }
+            })
+        </div>
+
+    </div>
+</div>
